@@ -29,8 +29,12 @@
             </ul>
         </div>
         <div class="bar">
-            <i class="fa-solid fa-bars"></i>
-            <i class="fa-solid fa-xmark" id="hdcross"></i>
+            <button class="" id="burger">
+                <i class="fa-solid fa-bars" ></i>
+            </button>
+            <button class=" hidden" id="hdcross">
+                <i class="fa-solid fa-xmark hidden" ></i>
+            </button>
         </div>
         <div class="account">
             <ul>
@@ -49,15 +53,16 @@
     <!-- Home -->
     <section class="home" id="home">
         <div class="hero-content">
-            <h1 style="color:#FAF0E6; font-weight:bold; font-size: 5rem;">Enjoy the best pizzas in town</h1>
+            <h1 class="header-text">Enjoy the best pizzas in town</h1>
             <div class="sub-hero">
-                <p style="color: #F5F5F5; font-size: larger;">Delicious Pizza...</p>
+                <p class="sub-text">Delicious Pizza...</p>
                 <button class="hero-btn"><a href="#menu">Order Now</a></button>
             </div>
         </div>
         <div class="pizza-image">
-            <img src="./images/img2.jpg" class="pizza-img" alt="Pizza">
+            <img src="https://img.freepik.com/premium-photo/aesthetic-dripping-tasty-pizza-slice-generative-ai_863013-1954.jpg" class="pizza-img" alt="Pizza">
         </div>
+        
     </section>
 
     <!-- Menu -->
@@ -68,21 +73,21 @@
                 <img src="./images/Pep.jpg" alt="Pepperoni Pizza">
                 <h2>Pepperoni Pizza</h2>
                 <p>Pepperoni, Cheese, Tomato Sauce</p>
-                <p>Price: $10</p>
+                <span>Price: $10</span>
                 <button class="menu-btn">Order Now</button>
             </div>
             <div class="menu-item">
                 <img src="./images/veg.jpg" alt="Vegetable Pizza">
                 <h2>Vegetable Pizza</h2>
                 <p>Onion, Tomato, Capsicum, Cheese</p>
-                <p>Price: $12</p>
+                <span>Price: $12</span>
                 <button class="menu-btn">Order Now</button>
             </div>
             <div class="menu-item">
                 <img src="./images/chick.jpg" alt="Chicken Pizza">
                 <h2>Chicken Pizza</h2>
                 <p>Chicken, Cheese, Tomato Sauce</p>
-                <p>Price: $15</p>
+                <span>Price: $15</span>
                 <button class="menu-btn">Order Now</button>
             </div>
         </div>
@@ -92,7 +97,7 @@
     <section class="order" id="order">
         <h1 class="order-heading">Order Now</h1>
         <h3 class="order-sub-heading">Fast Home Delivery</h3>
-        <form action="#">
+        <form action="#" class="order-form">
             <div class="order-content">
                 <div class="order-box">
                     <div class="inputbox">
@@ -111,12 +116,6 @@
                         <span>Your address :</span>
                         <textarea placeholder="Enter your address" cols="30" rows="10" class="txtarea"></textarea>
                     </div>
-                    
-                    <button type="submit"  class="submit-btn">
-                        Order Now
-                    </button>
-                   
-
                 </div>
                 <!-- 2nd Div -->
                 <div class="order-box">
@@ -138,6 +137,9 @@
                     </div>
                 </div>
             </div>
+            <button type="submit"  class="submit-btn">
+                Order Now
+            </button>
         </form>
     </section>
 
