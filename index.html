@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="header">
+        <div class="logo">
+            <img src="./images/icon.png" alt="">
+            <h1>Pizzeria</h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="bar">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark" id="hdcross"></i>
+        </div>
+        <div class="account">
+            <ul>
+                <li><a href="#home"><i class="fa-solid fa-house-chimney"></i></a></li>
+                <li>
+                    <div class="search" id="searchinput2">
+                        <input type="search">
+                        <i class="fa-solid fa-magnifying-glass srchicon"></i>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-user" id="user-lab"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="hero-content">
+            <h1 style="color:#FAF0E6; font-weight:bold; font-size: 5rem;">Enjoy the best pizzas in town</h1>
+            <div class="sub-hero">
+                <p style="color: #F5F5F5; font-size: larger;">Delicious Pizza...</p>
+                <button class="hero-btn"><a href="#menu">Order Now</a></button>
+            </div>
+        </div>
+        <div class="pizza-image">
+            <img src="./images/img2.jpg" class="pizza-img" alt="Pizza">
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="menudiv" id="menu">
+        <h1 class="menu-heading">Our Menu</h1>
+        <div class="menu">
+            <div class="menu-item">
+                <img src="./images/Pep.jpg" alt="Pepperoni Pizza">
+                <h2>Pepperoni Pizza</h2>
+                <p>Pepperoni, Cheese, Tomato Sauce</p>
+                <p>Price: $10</p>
+                <button class="menu-btn">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="./images/veg.jpg" alt="Vegetable Pizza">
+                <h2>Vegetable Pizza</h2>
+                <p>Onion, Tomato, Capsicum, Cheese</p>
+                <p>Price: $12</p>
+                <button class="menu-btn">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="./images/chick.jpg" alt="Chicken Pizza">
+                <h2>Chicken Pizza</h2>
+                <p>Chicken, Cheese, Tomato Sauce</p>
+                <p>Price: $15</p>
+                <button class="menu-btn">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order -->
+    <section class="order" id="order">
+        <h1 class="order-heading">Order Now</h1>
+        <h3 class="order-sub-heading">Fast Home Delivery</h3>
+        <form action="#">
+            <div class="order-content">
+                <div class="order-box">
+                    <div class="inputbox">
+                        <span>Full Name :</span>
+                        <input type="text" placeholder="Enter Your Name">
+                    </div>
+                    <div class="inputbox">
+                        <span>Pizza You Want :</span>
+                        <input type="text" placeholder="Enter Pizza Name">
+                    </div>
+                    <div class="inputbox">
+                        <span>Order Details :</span>
+                        <input type="text" placeholder="Specify any allergies">
+                    </div>
+                    <div class="inputbox">
+                        <span>Your address :</span>
+                        <textarea placeholder="Enter your address" cols="30" rows="10" class="txtarea"></textarea>
+                    </div>
+                    
+                    <button type="submit"  class="submit-btn">
+                        Order Now
+                    </button>
+                   
+
+                </div>
+                <!-- 2nd Div -->
+                <div class="order-box">
+                    <div class="inputbox">
+                        <span>Your Number :</span>
+                        <input type="number" placeholder="Enter Your Number">
+                    </div>
+                    <div class="inputbox">
+                        <span>How Much :</span>
+                        <input type="number" placeholder="How Many Pizzas you want">
+                    </div>
+                    <div class="inputbox">
+                        <span>When You Want :</span>
+                        <input type="datetime-local">
+                    </div>
+                    <div class="inputbox">
+                        <span>Our address :</span>
+                        <iframe class="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15072.597766502518!2d72.82550316977542!3d19.18867410000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6eea1f786fd%3A0x51c8e024b217b721!2s1441%20Pizzeria%20Malad!5e0!3m2!1sen!2sin!4v1722598886480!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <footer id="Contact">
+        
+        <div class="footer-container">
+
+            <div class="foot">
+                <i class="fa-solid fa-clock"></i>
+                <p>Timings</p>
+                <p>10:00 A.M-10:00pm</p>
+            </div>
+            <div class="foot">
+                <i class="fa-solid fa-phone"></i>
+                <p>Contact</p>
+                <p>099-3746728</p>
+            </div>
+            <div class="foot">
+                <i class="fa-solid fa-envelope"></i>
+                <p>Email</p>
+                <p>pizzia@pizzeria.com</p>
+            </div>
+            <div class="foot">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Address</p>
+                <p>mumbai,400 057</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Adding script here -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
